@@ -14,11 +14,12 @@ class GameViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        if let scene = GameScene(fileNamed:"GameScene") {
+        let gameScene:GameStartScene? = GameStartScene(size:
+            CGSize(width:UIScreen.mainScreen().bounds.size.width*2
+                , height:UIScreen.mainScreen().bounds.size.height*2))
+        if let scene = gameScene {
             // Configure the view.
             let skView = self.view as! SKView
-            skView.showsFPS = true
-            skView.showsNodeCount = true
             
             /* Sprite Kit applies additional optimizations to improve rendering performance */
             skView.ignoresSiblingOrder = true

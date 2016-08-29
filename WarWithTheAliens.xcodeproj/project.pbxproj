@@ -16,6 +16,9 @@
 		3017C2E31D646EEA00F82F2B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3017C2E11D646EEA00F82F2B /* LaunchScreen.storyboard */; };
 		3017C2EE1D646EEA00F82F2B /* WarWithTheAliensTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3017C2ED1D646EEA00F82F2B /* WarWithTheAliensTests.swift */; };
 		3017C2F91D646EEA00F82F2B /* WarWithTheAliensUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3017C2F81D646EEA00F82F2B /* WarWithTheAliensUITests.swift */; };
+		3017C3071D646FC700F82F2B /* SaveData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3017C3061D646FC700F82F2B /* SaveData.swift */; };
+		3017C3091D646FD000F82F2B /* GameOverScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3017C3081D646FD000F82F2B /* GameOverScene.swift */; };
+		3066C6FA1D6C9A5400C641EE /* GameStartScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3066C6F91D6C9A5400C641EE /* GameStartScene.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,9 @@
 		3017C2F41D646EEA00F82F2B /* WarWithTheAliensUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WarWithTheAliensUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3017C2F81D646EEA00F82F2B /* WarWithTheAliensUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarWithTheAliensUITests.swift; sourceTree = "<group>"; };
 		3017C2FA1D646EEA00F82F2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3017C3061D646FC700F82F2B /* SaveData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SaveData.swift; sourceTree = "<group>"; };
+		3017C3081D646FD000F82F2B /* GameOverScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameOverScene.swift; sourceTree = "<group>"; };
+		3066C6F91D6C9A5400C641EE /* GameStartScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameStartScene.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +115,9 @@
 				3017C2DF1D646EEA00F82F2B /* Assets.xcassets */,
 				3017C2E11D646EEA00F82F2B /* LaunchScreen.storyboard */,
 				3017C2E41D646EEA00F82F2B /* Info.plist */,
+				3017C3061D646FC700F82F2B /* SaveData.swift */,
+				3017C3081D646FD000F82F2B /* GameOverScene.swift */,
+				3066C6F91D6C9A5400C641EE /* GameStartScene.swift */,
 			);
 			path = WarWithTheAliens;
 			sourceTree = "<group>";
@@ -199,6 +208,7 @@
 				TargetAttributes = {
 					3017C2D01D646EEA00F82F2B = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 3YPTUD2PPG;
 					};
 					3017C2E81D646EEA00F82F2B = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -263,9 +273,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3017C3091D646FD000F82F2B /* GameOverScene.swift in Sources */,
 				3017C2D91D646EEA00F82F2B /* GameScene.swift in Sources */,
 				3017C2DB1D646EEA00F82F2B /* GameViewController.swift in Sources */,
+				3017C3071D646FC700F82F2B /* SaveData.swift in Sources */,
 				3017C2D51D646EEA00F82F2B /* AppDelegate.swift in Sources */,
+				3066C6FA1D6C9A5400C641EE /* GameStartScene.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,10 +422,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = WarWithTheAliens/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = personal.bamsae.WarWithTheAliens;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "9c83389d-c08a-46c6-8e91-37d1132be565";
 			};
 			name = Debug;
 		};
@@ -420,10 +436,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = WarWithTheAliens/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = personal.bamsae.WarWithTheAliens;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "9c83389d-c08a-46c6-8e91-37d1132be565";
 			};
 			name = Release;
 		};
@@ -494,6 +513,7 @@
 				3017C2FF1D646EEA00F82F2B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3017C3001D646EEA00F82F2B /* Build configuration list for PBXNativeTarget "WarWithTheAliensTests" */ = {
 			isa = XCConfigurationList;
@@ -502,6 +522,7 @@
 				3017C3021D646EEA00F82F2B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3017C3031D646EEA00F82F2B /* Build configuration list for PBXNativeTarget "WarWithTheAliensUITests" */ = {
 			isa = XCConfigurationList;
@@ -510,6 +531,7 @@
 				3017C3051D646EEA00F82F2B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
